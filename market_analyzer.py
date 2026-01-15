@@ -389,31 +389,25 @@ class MarketAnalyzer:
 - 必须输出纯 Markdown 文本格式
 - 禁止输出 JSON 格式
 - 禁止输出代码块
-- emoji 仅在标题处少量使用（每个标题最多1个）
+- 注意排版美观，分段合理
+- 适度搭配emoji
 
 ---
-
 # 今日市场数据
-
 ## 日期
 {overview.date}
-
 ## 主要指数
 {indices_text}
-
 ## 市场概况
 - 上涨: {overview.up_count} 家 | 下跌: {overview.down_count} 家 | 平盘: {overview.flat_count} 家
 - 涨停: {overview.limit_up_count} 家 | 跌停: {overview.limit_down_count} 家
 - 两市成交额: {overview.total_amount:.0f} 亿元
 - 北向资金: {overview.north_flow:+.2f} 亿元
-
 ## 板块表现
 领涨: {top_sectors_text}
 领跌: {bottom_sectors_text}
-
 ## 市场新闻
 {news_text if news_text else "暂无相关新闻"}
-
 ---
 
 # 输出格式模板（请严格按此格式输出）
@@ -422,19 +416,14 @@ class MarketAnalyzer:
 
 ### 一、市场总结
 （2-3句话概括今日市场整体表现，包括指数涨跌、成交量变化）
-
 ### 二、指数点评
 （分析上证、深证、创业板等各指数走势特点）
-
 ### 三、资金动向
 （解读成交额和北向资金流向的含义）
-
 ### 四、热点解读
 （分析领涨领跌板块背后的逻辑和驱动因素）
-
 ### 五、后市展望
 （结合当前走势和新闻，给出明日市场预判）
-
 ### 六、风险提示
 （需要关注的风险点）
 
