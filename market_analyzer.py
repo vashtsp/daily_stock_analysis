@@ -402,7 +402,6 @@ class MarketAnalyzer:
 - 上涨: {overview.up_count} 家 | 下跌: {overview.down_count} 家 | 平盘: {overview.flat_count} 家
 - 涨停: {overview.limit_up_count} 家 | 跌停: {overview.limit_down_count} 家
 - 两市成交额: {overview.total_amount:.0f} 亿元
-- 北向资金: {overview.north_flow:+.2f} 亿元
 ## 板块表现
 领涨: {top_sectors_text}
 领跌: {bottom_sectors_text}
@@ -419,7 +418,7 @@ class MarketAnalyzer:
 ### 二、指数点评
 （分析上证、深证、创业板等各指数走势特点）
 ### 三、资金动向
-（解读成交额和北向资金流向的含义）
+（解读成交额的含义）
 ### 四、热点解读
 （分析领涨领跌板块背后的逻辑和驱动因素）
 ### 五、后市展望
@@ -476,7 +475,6 @@ class MarketAnalyzer:
 | 涨停 | {overview.limit_up_count} |
 | 跌停 | {overview.limit_down_count} |
 | 两市成交额 | {overview.total_amount:.0f}亿 |
-| 北向资金 | {overview.north_flow:+.2f}亿 |
 
 ### 四、板块表现
 - **领涨**: {top_text}
